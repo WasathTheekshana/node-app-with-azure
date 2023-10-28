@@ -3,12 +3,13 @@ name: Check if my workflow is Okay 💀
 on: [push]
 
 jobs:
-  check:
+  run-indexjs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code 🙌
+    - name: Check out code
       uses: actions/checkout@v2
 
-    - name: Lets gooooo 😌
-      run: node index.js
+    - name: Run index.js
+      run: |
+        node index.js
