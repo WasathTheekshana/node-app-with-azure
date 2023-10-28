@@ -1,18 +1,11 @@
-name: Run index.js
-
-on:
-  push:
-    branches:
-      - main  # Change this to your main branch name
-
+name: Check if my workflow is Okay 💀
+on: [push]
 jobs:
-  run-indexjs:
+  check:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Check out code
+    - name: Checkout code 🙌
       uses: actions/checkout@v2
-
-    - name: Run index.js
+    - name: Lets gooooo 😌
       run: |
         node index.js
