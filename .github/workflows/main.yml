@@ -1,6 +1,9 @@
-name: Check if my workflow is Okay 💀
+name: Run index.js
 
-on: [push]
+on:
+  push:
+    branches:
+      - main  # Change this to your main branch name
 
 jobs:
   run-indexjs:
@@ -9,9 +12,6 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@v2
-
-    - name: Change directory to src
-      run: cd src
 
     - name: Run index.js
       run: |
